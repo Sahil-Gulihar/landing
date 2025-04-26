@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Menu, X } from 'lucide-react';
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,25 +11,44 @@ const Header: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex h-16 items-center justify-between">
           <a href="/" className="text-xl flex gap-1 items-center font-bold">
-          <img src="https://i.imgur.com/dTSedJ9.png" alt="Navdyut AI Logo" className="h-8 w-8 inline-block mr-2 rounded-md" />
+            <img
+              src="https://i.imgur.com/dTSedJ9.png"
+              alt="Navdyut AI Logo"
+              className="h-8 w-8 inline-block mr-2 rounded-md"
+            />
             <span className="text-orange-500">Navdyut</span>
             <span className="text-gray-600">AI</span>
           </a>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="/#vision" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a
+              href="/products"
+              className=" text-gray-600 hover:text-gray-900 transition-colors"
+            >
+              Products
+            </a>
+            <a
+              href="/#vision"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
               Vision
             </a>
-            <a href="/#services" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a
+              href="/#services"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
               Services
             </a>
-            <a href="/#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a
+              href="/#contact"
+              className="text-gray-600 hover:text-gray-900 transition-colors"
+            >
               Contact
             </a>
-            <a 
-              href="https://chat.navdyut.com" 
-              target="_blank" 
+            <a
+              href="https://chat.navdyut.com"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-orange-500 hover:text-orange-600 transition-colors"
             >
@@ -38,7 +57,7 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden p-2 text-gray-600 hover:text-gray-900 transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
@@ -51,30 +70,36 @@ const Header: React.FC = () => {
         {isMenuOpen && (
           <div className="md:hidden border-t border-orange-100/50">
             <nav className="flex flex-col py-4 space-y-4">
-              <a 
-                href="/#vision" 
+              <a
+                href={"/products"}
+                className="text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                Products
+              </a>
+              <a
+                href="/#vision"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={closeMenu}
               >
                 Vision
               </a>
-              <a 
-                href="/#services" 
+              <a
+                href="/#services"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={closeMenu}
               >
                 Services
               </a>
-              <a 
-                href="/#contact" 
+              <a
+                href="/#contact"
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={closeMenu}
               >
                 Contact
               </a>
-              <a 
-                href="https://chat.navdyut.com" 
-                target="_blank" 
+              <a
+                href="https://chat.navdyut.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="text-orange-500 hover:text-orange-600 transition-colors"
                 onClick={closeMenu}

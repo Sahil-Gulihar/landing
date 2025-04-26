@@ -1,5 +1,7 @@
+import { LocateIcon } from 'lucide-react';
 import React from 'react';
-
+import { AiFillLinkedin } from 'react-icons/ai';
+import { RiDiscordFill, RiTwitterXFill } from "react-icons/ri"
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
 
@@ -9,8 +11,8 @@ const Footer: React.FC = () => {
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
             <div>
-              <p className="text-sm text-gray-600">
-                Built with love. From Assam, for Bharat.
+              <p className="text-sm flex gap-3 items-center text-gray-600">
+               <LocateIcon className=' text-orange-600 animate-pulse' size={19}/> Built with love. From Assam, for Bharat.
               </p>
             </div>
 
@@ -28,6 +30,11 @@ const Footer: React.FC = () => {
             <p className="text-sm text-gray-600">
               &copy; {currentYear} Navdyut AI and Research Labs
             </p>
+          <div className='flex gap-4 items-center'>
+          <a href="https://x.com/navdyut_ai" className='hover:text-orange-600 hover:-translate-y-1 duration-150'><RiTwitterXFill size={26} /></a>
+          <a href='https://discord.gg/g8DHwTWj' className=' hover:text-orange-600 hover:-translate-y-1 duration-150'><RiDiscordFill size={28} /></a> 
+          <a href="https://www.linkedin.com/company/navdyut" className='hover:text-orange-600 hover:-translate-y-1 duration-150'><AiFillLinkedin size={26} /></a>
+          </div>
           </div>
         </div>
       </div>
