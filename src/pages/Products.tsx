@@ -36,7 +36,7 @@ const Products: React.FC = () => {
 
   return (
     <main className="py-32" ref={containerRef}>
-      <div className="container mx-auto px-4 md:px-6 md:mb-64">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="products-title font-display text-4xl font-medium mb-16 text-center">Our Products</h1>
           
