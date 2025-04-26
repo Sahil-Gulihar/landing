@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
             </p>
           <div className='flex gap-4 items-center'>
           <a href="https://x.com/navdyut_ai" className='hover:text-orange-600 hover:-translate-y-1 duration-150'><RiTwitterXFill size={26} /></a>
-          <a href='https://discord.gg/g8DHwTWj' className=' hover:text-orange-600 hover:-translate-y-1 duration-150'><RiDiscordFill size={28} /></a> 
+          <a href='https://discord.gg/DqCQsnWgG6' className=' hover:text-orange-600 hover:-translate-y-1 duration-150'><RiDiscordFill size={28} /></a> 
           <a href="https://www.linkedin.com/company/navdyut" className='hover:text-orange-600 hover:-translate-y-1 duration-150'><AiFillLinkedin size={26} /></a>
           </div>
           </div>
