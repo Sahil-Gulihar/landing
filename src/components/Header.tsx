@@ -18,13 +18,13 @@ const Header: React.FC = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#vision" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="/#vision" className="text-gray-600 hover:text-gray-900 transition-colors">
               Vision
             </a>
-            <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="/#services" className="text-gray-600 hover:text-gray-900 transition-colors">
               Services
             </a>
-            <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+            <a href="/#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
               Contact
             </a>
             <a 
@@ -52,21 +52,21 @@ const Header: React.FC = () => {
           <div className="md:hidden border-t border-orange-100/50">
             <nav className="flex flex-col py-4 space-y-4">
               <a 
-                href="#vision" 
+                href="/#vision" 
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={closeMenu}
               >
                 Vision
               </a>
               <a 
-                href="#services" 
+                href="/#services" 
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={closeMenu}
               >
                 Services
               </a>
               <a 
-                href="#contact" 
+                href="/#contact" 
                 className="text-gray-600 hover:text-gray-900 transition-colors"
                 onClick={closeMenu}
               >
